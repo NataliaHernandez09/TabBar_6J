@@ -32,26 +32,26 @@ class _MyHomePageState extends State<MyHomePage> {
       length: 4,
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.purple,
           bottom: TabBar(
-            isScrollable: true,
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.circular(50), // Creates border
-                color: Colors.cyanAccent), //Change background color from here
+                color: Colors.black), //Change background color from here
             tabs: [
-              Tab(icon: Icon(Icons.flight)),
-              Tab(icon: Icon(Icons.directions_transit)),
-              Tab(icon: Icon(Icons.directions_car)),
-              Tab(icon: Icon(Icons.account_box_outlined)),
+              Tab(icon: Icon(Icons.account_balance_outlined)),
+              Tab(icon: Icon(Icons.add_a_photo_outlined)),
+              Tab(icon: Icon(Icons.add_box_outlined)),
+              Tab(icon: Icon(Icons.ad_units_outlined)),
             ],
           ),
-          title: Text('Tabs Demo'),
+          title: Text('Tabs Natalia Hernandez'),
         ),
         body: TabBarView(
           children: [
-            Icon(Icons.flight, size: 350),
-            Icon(Icons.directions_transit, size: 350),
-            Icon(Icons.directions_car, size: 350),
-            Icon(Icons.account_box_outlined, size: 350),
+            Icon(Icons.account_balance_outlined, size: 350),
+            Icon(Icons.add_a_photo_outlined, size: 350),
+            Icon(Icons.add_box_outlined, size: 350),
+            Icon(Icons.ad_units_outlined, size: 350),
           ],
         ),
       ),
